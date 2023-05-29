@@ -1,1 +1,9 @@
-<h1>Home:Code Step by Step</h1>
+<h1>Home:Code Step by Step </h1>
+<!-- services add -->
+<ul>
+    <li *ngFor="let user of userdatawithservice">
+        {{user.id}}
+        {{user.name}}
+        {{user.description}}
+    </li>
+</ul>
