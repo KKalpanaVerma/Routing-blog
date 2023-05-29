@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { AboutCompanyComponent } from './about-company/about-company.component';
+import { AboutChannelComponent } from './about-channel/about-channel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    NotFoundComponent,
+    AboutCompanyComponent,
+    AboutChannelComponent
   ],
   imports: [
     BrowserModule,
