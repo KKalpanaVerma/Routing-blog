@@ -12,5 +12,12 @@ export class AppComponent {
       this.userdatawithservice=data;
     });
   }
+  formdata:any;
+  getUserFormData(data:any)
+  {
+    this.userdata.saveusers(data).subscribe((result)=>{
+        console.warn(result);
+    })
+  }
   title = 'Routing-blog';
 }

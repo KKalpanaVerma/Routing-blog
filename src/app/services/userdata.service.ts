@@ -12,4 +12,8 @@ url="https://filterlists.com/api/directory/lists"
   {
       return this.http.get(this.url);
   }
+  saveusers(data:any)
+  {
+      return this.http.post(this.url,data);
+  }
 }

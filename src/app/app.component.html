@@ -4,9 +4,15 @@
 <a routerLink="user">User</a><br/>
 <router-outlet></router-outlet>
 <h1>Main:Code Step by Step</h1>
-<ul>
+<!-- <ul>
     <li *ngFor="let user of userdatawithservice">
         {{user.name}}
     </li>
-</ul>
-<app-home></app-home>
+</ul> -->
+<form #usersForm="ngForm" (ngSubmit)="getUserFormData(usersForm.value)">
+    <input type="text" placeholder="Enter name" name="username" ngModel><br><br>
+    <input type="text" placeholder="Enter email" name="useremail" ngModel><br><br>
+    <input type="text" placeholder="Enter placeholder" name="userpwd" ngModel><br><br>
+    <button>Add data</button>
+</form>
+<!-- <app-home></app-home> -->
